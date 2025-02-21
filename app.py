@@ -69,7 +69,7 @@ with tab1:
             annotated_frame = results[0].plot()
             
             # Display the annotated frame
-            frame_placeholder.image(annotated_frame, channels="RGB", use_column_width=True)
+            frame_placeholder.image(annotated_frame, channels="RGB", use_container_width=True)
         
         # Release the webcam when stopped
         cap.release()
@@ -91,12 +91,12 @@ with tab2:
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("Original Image")
-            st.image(image_np, channels="RGB", use_column_width=True)
+            st.image(image_np, channels="RGB", use_container_width=True)
         
         with col2:
             st.subheader("Detected Keypoints")
             annotated_img = results[0].plot()
-            st.image(annotated_img, channels="RGB", use_column_width=True)
+            st.image(annotated_img, channels="RGB", use_container_width=True)
         
         # Display detection information
         if len(results[0].boxes) > 0:
