@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: learning-post-estimation
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit>=1.42.2
+Requires-Dist: ultralytics>=8.3.72
+
+# Learning Pose Estimation
+
+[Using Ultralytics for Yolo11](https://docs.ultralytics.com/quickstart/)
+1. install ultralytics by `pip install ultralytics`
